@@ -1,0 +1,23 @@
+digraph PigletFarmTracking {
+	rankdir=LR size=8
+	node [fillcolor=lightgrey fontname=Helvetica shape=box style="rounded,filled"]
+	Piglets [label="🐷 Piglets w/ GR/RFID Tags"]
+	ScannerApp [label="📱 Mobile Scanner App
+(iOS/Android)"]
+	Connectivity [label="🌐 Connectivity Layer
+(WiFi / 4G / LoRaWAN)"]
+	Backend [label="☁️ Backend Processing
+- Data Ingestion
+- Pig Registry
+- Geo-fencing Engine
+- Real-time Stream
+- Databases (SQL/TSDB)"]
+	Dashboard [label="📊 Farm Dashboard (Web)
+- Live Map w/ GeoFence
+- Alerts & Notifications
+- Reports & Analytics"]
+	Piglets -> ScannerApp
+	ScannerApp -> Connectivity
+	Connectivity -> Backend
+	Backend -> Dashboard
+}
