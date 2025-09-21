@@ -4,7 +4,7 @@ if [ ! -d "myenv" ]; then
 fi
 
 # Activate the virtual environment
-. myenv/bin/activate
+source myenv/bin/activate
 
 # Show installed packages
 pip list
