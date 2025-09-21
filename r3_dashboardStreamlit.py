@@ -222,3 +222,4 @@ if st.button("Start Visual Monitoring"):
         visual_frame.image(annotated_frame, channels="BGR")
         if recent_alerts:
             alert_panel.table(pd.DataFrame(recent_alerts))
+            
